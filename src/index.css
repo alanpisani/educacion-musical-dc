@@ -1,0 +1,38 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --principal-color: rgb(44, 2, 44);
+  --violet: #503aca;
+  --pink: rgb(234, 52, 255);
+  --dark: black;
+}
+
+body{
+  background-color: var(--principal-color);
+  color: white;
+}
+
+section{
+  /* place-items: center;*/
+  padding:10rem; 
+  position: relative;
+}
+
+.section-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1.5rem;
+  width:100%;
+}
+
+.direction-row{
+  flex-direction: row;
+  gap:3rem;
+}

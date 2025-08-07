@@ -1,0 +1,12 @@
+.logo{
+    aspect-ratio: 1/1;
+    background-image: url("../../../assets/img/logo.png");
+    background-size: contain;
+    background-color: white;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border:3px solid white;
+    box-shadow: 0 0 10px var(--violet);
+    width:100px;
+    height:100px;
+}

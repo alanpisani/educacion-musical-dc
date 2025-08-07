@@ -1,0 +1,9 @@
+.hero-section{
+  padding: 5rem 0;
+  border:1px solid red;
+}
+
+.hero-info-container{
+    border: 1px solid blue;
+    width: 50%;
+}
