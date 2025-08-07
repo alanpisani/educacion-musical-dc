@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
     grid-auto-rows: 400px;
+    opacity: .5;
 }
 
 .collage img{
@@ -13,3 +14,5 @@
 .collage img:nth-child(4){
     grid-column: span 2;
 }
+
+/**NOTA: Modificar (Agrandar o achicar grid) en caso de querer h1 grande en hero)
