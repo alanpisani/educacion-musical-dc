@@ -1,4 +1,15 @@
 .collage{
-    bordeR:1px solid blue;
     width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-auto-rows: 400px;
+}
+
+.collage img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
+
+.collage img:nth-child(4){
+    grid-column: span 2;
 }
