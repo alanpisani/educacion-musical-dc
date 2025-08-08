@@ -33,7 +33,7 @@ section{
 
 .fd-column{
   flex-direction: column;
-  /* gap:3rem; */
+  gap: 10rem;
 }
 
 .flex-justify-center{
