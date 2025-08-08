@@ -20,7 +20,7 @@ body{
 
 section{
   /* place-items: center;*/
-  padding:10rem; 
+  padding:10rem 20rem; 
   position: relative;
 }
 
@@ -29,9 +29,22 @@ section{
   justify-content: space-between;
   gap: 1.5rem;
   width:100%;
+  border:1px solid red;
 }
 
-.direction-row{
-  flex-direction: row;
-  gap:3rem;
+.fd-column{
+  flex-direction: column;
+  /* gap:3rem; */
+}
+
+.flex-justify-center{
+  justify-content: center;
+}
+
+.flex-space-around{
+  justify-content: space-around;
+}
+
+.align-items-center{
+  align-items: center;
 }
