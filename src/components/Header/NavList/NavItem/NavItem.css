@@ -7,7 +7,7 @@
 }
 
 .nav-item{
-    background-color: var(--principal-color);
+    background-color: var(--dark);
     cursor: pointer;
     padding:.75rem 1.3rem;
     text-transform: uppercase;

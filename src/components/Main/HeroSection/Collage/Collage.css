@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
     grid-auto-rows: 400px;
-    opacity: .5;
+    opacity: 0.9;
 }
 
 .collage img{
