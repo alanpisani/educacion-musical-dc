@@ -10,7 +10,7 @@ function Header(){
             <nav className="navigator">
                 <Logo />
                 <NavList />
-                <CoshitaButton label={"Contactame"}/>
+                <CoshitaButton label={"Contacto"}/>
             </nav>
         </header>
     );

@@ -11,11 +11,13 @@
   --violet: #503aca;
   --pink: rgb(234, 52, 255);
   --dark: black;
+  --back-violet: rgb(36, 9, 119);
+  --back-light-violet: rgb(72, 7, 149)
 }
 
 body{
   background-color: var(--principal-color);
-  background-image: url("./assets/img/background.jpg");
+  background-image: radial-gradient(circle at top right, var(--back-violet) 0%, var(--back-violet) 48%,var(--back-light-violet) 48%, var(--back-light-violet) 53%,rgb(109, 5, 178) 53%, rgb(109, 5, 178) 56%,rgb(145, 2, 208) 56%, rgb(145, 2, 208) 69%,rgb(181, 0, 237) 69%, rgb(181, 0, 237) 100%);
   color: white;
 }
 

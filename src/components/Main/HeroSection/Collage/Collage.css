@@ -3,12 +3,22 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
     grid-auto-rows: 400px;
+    gap: 10px;
     opacity: 0.9;
 }
 
 .collage img{
     width: 100%; height: 100%;
     object-fit: cover;
+    transition: 0.2s ease;
+}
+
+.collage img:hover{
+    filter:drop-shadow(0 0 10px black);
+}
+
+.collage:hover img:not(:hover){
+    scale: 0.95;
 }
 
 .collage img:nth-child(4){
