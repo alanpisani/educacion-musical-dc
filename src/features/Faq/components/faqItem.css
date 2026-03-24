@@ -1,0 +1,36 @@
+.faq-item {
+
+    & button,
+    & p {
+        width: 100%;
+        padding: 2rem;
+        text-align: left;
+        border: 1px solid var(--dark);
+        font-size: var(--typical-font-size);
+    }
+
+    & button {
+        cursor: pointer;
+        background-color: var(--pink-pastel);
+        transition: .3s ease;
+        transform: translateX(0);
+        font-weight: bold;
+
+
+        &:hover {
+            background-color: var(--text);
+            transform: translateX(1rem);
+        }
+
+        &.clicked {
+            transform: translateX(1rem);
+            background-color: var(--text);
+        }
+    }
+
+    & p {
+        background-color: var(--text);
+        transform: translateX(1rem);
+
+    }
+}

@@ -1,0 +1,17 @@
+.first-intro-section{
+    padding: 0;
+}
+
+.first-intro {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    border-bottom: 7px solid var(--text);
+
+    & h2 {
+        font-size: clamp(2.5rem, 5vw, 10rem);
+        color: var(--text);
+        text-shadow: var(--text-shadow);
+        text-align: center;
+    }
+}

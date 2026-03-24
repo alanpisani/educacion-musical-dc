@@ -1,0 +1,48 @@
+.classes {
+
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    border-top: 7px solid var(--text);
+    padding: 0rem 5rem;
+}
+
+.classes-title-wrapper {
+    position: relative;
+    overflow: hidden;
+
+    & h2 {
+        font-size: 5vw;
+        position: sticky;
+        top: 0;
+        color: var(--text);
+        text-shadow: var(--text-shadow);
+    }
+}
+
+.classes-items-container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+
+    width: 70%;
+    padding: 5rem 0rem 5rem 0;
+
+    &:has(div:hover)>div:not(:hover) {
+        filter: blur(2px);
+    }
+
+}
+
+@media (max-width: 900px) {
+    .classes{
+        padding: 0rem 1.5rem;
+    }
+    .classes-items-container {
+        grid-template-columns: 1fr;
+        gap:2rem;
+    }
+}

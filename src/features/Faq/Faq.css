@@ -1,0 +1,29 @@
+.faq {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 0rem 5rem;
+
+    & h2 {
+        font-size: clamp(4rem, 6vw, 7rem);
+        text-align: end;
+        color: var(--text);
+        text-shadow: var(--text-shadow);
+    }
+}
+
+.faqs-container {
+    width: 100%;
+
+}
+
+@media (max-width: 900px) {
+    .faq {
+        padding: 5rem 1.5rem;
+
+        & h2 {
+            text-align: center;
+        }
+    }
+}

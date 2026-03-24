@@ -1,0 +1,40 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+    padding: 0 5rem 0 1.5rem;
+    z-index: 2;
+}
+
+
+.hero-content {
+    text-shadow: var(--text-shadow);
+    width: clamp(350px, 65vw, 1000px);
+    padding-bottom: 20vh;
+    & h1 {
+        color: var(--text);
+        font-size: clamp(4rem, 7vw, 10rem);
+        width: clamp(350px, 55vw, 65rem);
+    }
+}
+
+@media (max-width: 900px) {
+    .hero {
+        align-items: center;
+        padding: 0;
+    }
+
+    .hero-content {
+        display: flex;
+        justify-content: center;
+        height: 60vh;
+        padding-bottom: 0;
+    }
+
+    h1 {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}

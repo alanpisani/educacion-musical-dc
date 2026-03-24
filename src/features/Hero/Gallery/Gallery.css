@@ -1,0 +1,37 @@
+.gallery {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+}
+
+.trail {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    user-select: none;
+    border: 1px solid var(--dark);
+
+   clip-path: polygon(50% 0%, 67% 15%, 100% 15%, 78% 40%, 100% 70%, 67% 70%, 50% 100%, 33% 70%, 0% 70%, 22% 40%, 0% 15%, 33% 15%);
+    
+    animation: fadeTrail 2s forwards;
+}
+
+@keyframes fadeTrail {
+    from {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+        width: 0;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(.8);
+        width: 350px;
+    }
+}
+
+@media (max-width: 900px){
+    .gallery{
+        width: 100%;
+    }
+}

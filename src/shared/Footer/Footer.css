@@ -1,0 +1,11 @@
+footer {
+    border-top: 1px solid var(--dark);
+    padding: 2rem;
+    background-color: var(--pink);
+    color: var(--dark);
+    font-weight: bold;
+
+    display: grid;
+    place-items: center;
+
+}
