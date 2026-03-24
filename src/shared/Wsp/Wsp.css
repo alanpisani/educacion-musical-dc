@@ -15,6 +15,7 @@
 
 @media (max-width: 900px){
     .wsp{
-        right: 0;
+        /* right: 0; */
+        display: none;
     }
 }
