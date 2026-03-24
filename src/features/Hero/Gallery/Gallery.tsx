@@ -1,12 +1,11 @@
 import "./Gallery.css";
 import { useRef, useEffect } from "react";
+import img from "../../../assets/img/foto-1.png";
+import img2 from "../../../assets/img/foto-2.png";
+import img3 from "../../../assets/img/foto-3.png";
 
 export default function Gallery() {
-  const images = [
-    "/src/assets/img/foto-1.png",
-    "/src/assets/img/foto-2.png",
-    "/src/assets/img/foto-3.png",
-  ];
+  const images = [img, img2, img3];
 
   const galleryRef = useRef<HTMLDivElement>(null);
   const lastSpawn = useRef(0);
