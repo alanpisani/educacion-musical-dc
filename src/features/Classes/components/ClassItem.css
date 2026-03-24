@@ -74,7 +74,7 @@
 }
 
 .class-item .class-item-title-wrapper .class-item-img-wrapper img {
-    width: 200px;
+    width: clamp(350px, 10vw, 400px);
     height: 150px;
     object-fit: contain;
 

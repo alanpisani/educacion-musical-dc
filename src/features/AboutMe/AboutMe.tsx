@@ -7,21 +7,27 @@ import { useScrollProgress } from "../../hooks/useScrollProgress";
 import { useSpringY } from "../../hooks/useSpringY";
 import { useSpringX } from "../../hooks/useSpringX";
 import { useSpringRotate } from "../../hooks/useSpringRotate";
-
+import { useMediaQuery } from "../../hooks/useMediaQuery";
 
 export default function AboutMe() {
   const ref = useRef<HTMLElement | null>(null);
   const progress = useScrollProgress(ref as RefObject<HTMLElement>);
 
   const y = useSpringY(progress, { from: -300 });
-  const x = useSpringX(progress, { from: 400});
+  const x = useSpringX(progress, { from: 400 });
   const rotate = useSpringRotate(progress, { from: 25, to: 0 });
+
+  const media = useMediaQuery("max-width: 900px");
 
   return (
     <section ref={ref} className="about-me-section" id="about-me">
       <div className="about-me">
         <div className="h2-wrapper">
-          <motion.h2 style={{ y }}>Me presento</motion.h2>
+          {media ? (
+            <motion.h2 style={{ y }}>Me presento</motion.h2>
+          ) : (
+            <h2>Me presento</h2>
+          )}
         </div>
         <div className="about-me-presentation">
           <p className="about-me-description">

@@ -38,11 +38,26 @@
 }
 
 @media (max-width: 900px) {
-    .classes{
-        padding: 0rem 1.5rem;
+    .classes {
+        padding: 3rem 1.5rem;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .classes-title-wrapper {
+        overflow: visible;
+
+        & h2 {
+            font-size: clamp(3rem, 5vw, 20rem);
+            position: sticky;
+            top: 0;
+            color: var(--text);
+            text-shadow: var(--text-shadow);
+        }
+    }
+
     .classes-items-container {
         grid-template-columns: 1fr;
-        gap:2rem;
+        gap: 2rem;
     }
 }

@@ -23,12 +23,13 @@
     .hero {
         align-items: center;
         padding: 0;
+        border-bottom: 3px solid var(--text);
     }
 
     .hero-content {
         display: flex;
         justify-content: center;
-        height: 60vh;
+        height: 50vh;
         padding-bottom: 0;
     }
 

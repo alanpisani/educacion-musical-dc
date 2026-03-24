@@ -6,10 +6,11 @@ import Home from "./pages/Home/Home";
 
 export default function App() {
   useSmoothScroll();
+  const basename = import.meta.env.MODE === "production" ? "/daiana" : "/";
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />

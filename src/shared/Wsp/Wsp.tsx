@@ -10,7 +10,7 @@ export default function Wsp() {
         rel="noopener noreferrer"
       >
         <SiWhatsapp
-          size={"auto"}
+          size={50}
           color="white"
           style={{ background: "#25D366", borderRadius: "100%" }}
         />

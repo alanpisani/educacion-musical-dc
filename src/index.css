@@ -31,6 +31,7 @@
 
 html {
   scrollbar-color: var(--pink) var(--principal-color);
+  position: relative;
 }
 
 #root {

@@ -178,6 +178,8 @@ header {
     .header-nav ul{
         & li{
             white-space: normal;
+            padding-left: .5rem;
+            text-align: ;
         }
     }
 }
